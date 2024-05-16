@@ -8,7 +8,6 @@ import streamlit as st
 from dotenv import load_dotenv
 import os
 from functions import *
-from streamlit_profiler import Profiler
 from PIL import Image
 import pickle
 from langchain_community.chat_message_histories import (
