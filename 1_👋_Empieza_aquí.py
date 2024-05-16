@@ -1,3 +1,9 @@
+
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 import streamlit as st
 from PIL import Image
 import base64
@@ -55,8 +61,8 @@ st.sidebar.markdown(
 
 st.title('👋 ¡Bienvenido al Asistente IA de Brain Food!')
 
-st.markdown('''Esta aplicación basada en Inteligencia Artificial Generativa (GenAI) busca apoyar tu trabajo como director de empresa, permitiéndote  explorar tus documentos de forma más efectiva, facilitar tu preparación para reuniones para llegar a los puntos en que aportas más valor, y ayudarte a buscar asociaciones entre documentos para algún informe o charla que tengas que preparar.​
-​Todavía en estado de piloto, para probar su efectividad y recibir tu feedback, hemos desarrollado cuatro funcionalidades basadas en GenAI:
+st.markdown('''Esta aplicación basada en Inteligencia Artificial Generativa (GenAI) busca apoyar tu trabajo como director de empresa, permitiéndote  explorar tus documentos de forma más efectiva, facilitar tu preparación para reuniones para llegar a los puntos en que aportas más valor, y ayudarte a buscar asociaciones entre documentos para algún informe o charla que tengas que preparar.
+    Todavía en estado de piloto, para probar su efectividad y recibir tu feedback, hemos desarrollado tres funcionalidades basadas en GenAI:
             ''')
 
 with st.container():
@@ -76,16 +82,10 @@ with st.container():
                 ''',unsafe_allow_html=True)
     
 with st.container():
-    st.subheader('3. Explora los documentos precargados')
-    st.markdown('''Con esta funcionalidad vas a poder ingresar tu consulta sobre cualquiera de los documentos precargados. A continuación se presentará un gráfico con los segmentos de texto más idóneos que responden a esa consulta, junto con el documento desde el cual provienen.
-                El objetivo final es que logres identificar y asociar los documentos que responden de mejor manera las preguntas que tengas.
-                ''')
-    
-with st.container():
-    st.subheader('4. Prueba con tu propio documento')
-    st.markdown('''En este apartado podrás cargar tu propio documento en formato PDF para que nuestro asistente virtual responda todas las preguntas que tengas sobre éste.
+    st.subheader('3. Prueba con tu propio documento')
+    st.markdown('''En este apartado podrás cargar tu propio documento en formato PDF para que nuestro asistente virtual responda todas las preguntas que tengas sobre este.
                 Además, puedes solicitarle tareas que vayan mas allá de preguntas sobre determinados tópicos. Por ejemplo, puedes pedir que realice resuménes, extraiga información relevante, analice secciones específicas del documento, entre otras.
                 El objetivo final es que puedas identificar, asociar, e ir a consultar de forma directa los documentos que se parecen más a  tu pregunta o tema de interés. Es importante notar que la IA no responde directamente lo que aparece en estos segmentos, sólo los usa como contexto para darte la respuesta en la función de chatbot.<br><br>
                 Por otro lado, como ésta es una versión piloto, el robot sólo puede interpretar el texto de los archivos, aún no comprende las tablas ni las imágenes.
-                No obstante, es una funcionalidad que está en desarrollo. Te recomendamos probar con distintas maneras de formular tu pregunta, por ejemplo, resume o extrae los puntos más importantes entrega resultados muy distintos. Al ser un piloto, también te recomendamos probar con un documento PDF de texto liviano para que la carga no tome tanto tiempo.
+                No obstante, es una funcionalidad que está en desarrollo. Te recomendamos probar con distintas maneras de formular tu pregunta – por ejemplo, resume o extrae los puntos más importantes entrega resultados muy distintos. Al ser un piloto, también te recomendamos probar con un documento PDF de texto liviano para que la carga no tome tanto tiempo.
                 ''',unsafe_allow_html=True)
