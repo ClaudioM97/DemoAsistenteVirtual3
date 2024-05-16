@@ -1,1 +1,2 @@
-poppler-utils==0.1.0
+poppler-utils
+tesseract-ocr
