@@ -83,8 +83,8 @@ with st.container():
     
 with st.container():
     st.subheader('3. Prueba con el documento precargado')
-    st.markdown('''En este apartado vas a poder probar la nueva funcionalidad del robot, su comprensión y análisis de la información contenida en las tablas de los documentos.
-        Para comenzar, se cargó previamente un documento público idóneo para esta demostración, los Estados Financieros Consolidados de Falabella al 31 de diciembre de 2023.
-        Es importante mencionar que esta funcionalidad está su versión de prueba, por lo que es esperable que cometa errores en algunas respuestas y además, el robot no cuenta con memoria de la conversación.
-        Esto implica que cada pregunta que le hagas, será tratada de manera independiente, no va a poder recordar las preguntas pasadas.
+    st.markdown('''En este apartado vas a poder probar la nueva funcionalidad del robot; su comprensión y análisis de la información contenida en las tablas de los documentos.
+        Para comenzar, se cargó previamente un documento público idóneo para esta demostración; los Estados Financieros Consolidados de Falabella al 31 de diciembre de 2023.
+        Es importante mencionar que esta funcionalidad está en su versión de prueba, por lo que es esperable que cometa errores en algunas respuestas y además, el robot no cuenta con memoria de la conversación.
+        Esto implica que cada pregunta que le hagas, será tratada de manera independiente, no va a recordar las preguntas pasadas.
                 ''',unsafe_allow_html=True)

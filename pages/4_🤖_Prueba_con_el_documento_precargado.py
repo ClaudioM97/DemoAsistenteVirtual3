@@ -61,7 +61,7 @@ st.title("🤖 Prueba con el documento precargado")
 
 st.markdown('''En este apartado podras realizar preguntas sobre los Estados Financieros Consolidados de Falabella al 31 de diciembre de 2023.
             Este documento se ha cargado previamente para ahorrar el tiempo que toma su procesamiento.
-            Cuenta con la particularidad de poseer una gran cantidad de tablas en distintos formatos, lo que lo hace idóneo para probar con las nuevas capacidades del robot.
+            Cuenta con la particularidad de poseer una gran cantidad de tablas en distintos formatos, lo que lo hace idóneo para probar con la nueva capacidad del robot de interpretación y análisis de tablas.
             Un aspecto importante a considerar es que al ser una funcionalidad nueva y más compleja que la anterior, esta versión del chatbot no cuenta con memoria, es decir,
             el robot va a responder las preguntas de manera indepediente, sin recordar las preguntas anteriores. Sin embargo, ¡Es un elemento que está en proceso!
                 ''',unsafe_allow_html=True)
