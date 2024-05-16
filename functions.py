@@ -3,7 +3,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.vectorstores import Chroma
 import chromadb
 from langchain_openai import AzureChatOpenAI
-from unstructured.partition.pdf import partition_pdf
 import openai
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import RetrievalQA, ConversationalRetrievalChain
