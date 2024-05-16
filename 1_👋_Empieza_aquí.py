@@ -82,10 +82,9 @@ with st.container():
                 ''',unsafe_allow_html=True)
     
 with st.container():
-    st.subheader('3. Prueba con tu propio documento')
-    st.markdown('''En este apartado podrás cargar tu propio documento en formato PDF para que nuestro asistente virtual responda todas las preguntas que tengas sobre este.
-                Además, puedes solicitarle tareas que vayan mas allá de preguntas sobre determinados tópicos. Por ejemplo, puedes pedir que realice resuménes, extraiga información relevante, analice secciones específicas del documento, entre otras.
-                El objetivo final es que puedas identificar, asociar, e ir a consultar de forma directa los documentos que se parecen más a  tu pregunta o tema de interés. Es importante notar que la IA no responde directamente lo que aparece en estos segmentos, sólo los usa como contexto para darte la respuesta en la función de chatbot.<br><br>
-                Por otro lado, como ésta es una versión piloto, el robot sólo puede interpretar el texto de los archivos, aún no comprende las tablas ni las imágenes.
-                No obstante, es una funcionalidad que está en desarrollo. Te recomendamos probar con distintas maneras de formular tu pregunta – por ejemplo, resume o extrae los puntos más importantes entrega resultados muy distintos. Al ser un piloto, también te recomendamos probar con un documento PDF de texto liviano para que la carga no tome tanto tiempo.
+    st.subheader('3. Prueba con el documento precargado')
+    st.markdown('''En este apartado vas a poder probar la nueva funcionalidad del robot, su comprensión y análisis de la información contenida en las tablas de los documentos.
+        Para comenzar, se cargó previamente un documento público idóneo para esta demostración, los Estados Financieros Consolidados de Falabella al 31 de diciembre de 2023.
+        Es importante mencionar que esta funcionalidad está su versión de prueba, por lo que es esperable que cometa errores en algunas respuestas y además, el robot no cuenta con memoria de la conversación.
+        Esto implica que cada pregunta que le hagas, será tratada de manera independiente, no va a poder recordar las preguntas pasadas.
                 ''',unsafe_allow_html=True)
