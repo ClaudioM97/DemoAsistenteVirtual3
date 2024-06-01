@@ -63,6 +63,7 @@ st.title("🧠 Habla con los discursos")
 
 st.markdown('''
         ¡Pruébalo tu mismo! 🤝.
+        
         En el costado izquierdo, puedes ajustar el nivel de detalle que ofrece el asistente en su respuesta.
         Un menor nivel implica una respuesta más específica, mientras que un mayor nivel implica una respuesta con mayor contexto y extensión.
          ''',unsafe_allow_html=True)
