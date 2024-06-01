@@ -85,7 +85,7 @@ Brain Food es una consultora especializada en Transformación Digital, Analític
 
 Sobre PARLA
 
-PARLA es una agencia integrada de comunicación estratégica, con más de 9 años apoyando a empresas y organizaciones a conectarse con su entorno y comunicar. Liderada por Rodrigo Frey, Francisco Derosas y Sebastián Jordana junto a un equipo multidisciplinario de más de 40 profesionales
+PARLA es una agencia integrada de comunicación estratégica, con más de 9 años apoyando a empresas y organizaciones a conectarse con su entorno y comunicar. Liderada por Rodrigo Frey, Francisco Derosas y Sebastián Jordana junto a un equipo multidisciplinario de más de 40 profesionales.
 
             """)
 
