@@ -19,11 +19,11 @@ st.markdown(
     """
         <style>
             [data-testid="stSidebar"] {
-                background-image: url("https://brainfood.cl/wp-content/themes/theme_brainfood/assets/svgs/imagotipo-brainfood.svg");
+                background-image: url("https://brainfood.cl/wp-content/themes/theme_brainfood/assets/svgs/imagotipo-brainfood.svg"),url("https://parla.cl/wp-content/themes/parla2023/assets/svg/logo-parla_wh.svg");
                 background-repeat: no-repeat;
-                padding-top: 80px;
-                background-position: 20px -20px;
-                background-size: 170px 170px; 
+                padding-top: 50px;
+                background-position: 20px -20px, 160px -20px;
+                background-size: 120px 170px; 
             }
         </style>
         """,
@@ -31,7 +31,6 @@ st.markdown(
 )  
 
 
-    
 page_bg_img = '''
 <style>
 [data-testid="stAppViewContainer"]{
@@ -47,23 +46,29 @@ background-color:rgba(64, 64, 64, 1)
 
 </style>
 '''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
-st.markdown("""
-<style>
-button {
-    color: white !important;
-}
-</style>
-""", unsafe_allow_html=True)
+st.sidebar.markdown(
+    """
+    <style>
+    .spacer {
+        margin-top: 30px; 
+    }
+    </style>
+    <div class="spacer"></div>
+    ¿Quieres saber más de nosotros? <br><br>
+    Visita <a href="https://brainfood.cl" target="_blank">Brain Food</a> para más información.<br>
+    También puedes seguirnos en <a href="https://cl.linkedin.com/company/brain-food-spa" target="_blank">Linkedin</a>.<br><br>
+    Puedes conocer más de PARLA en <a href="https://parla.cl" target="_blank">PARLA</a>.
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("🧠 Habla con los discursos")
 
 st.markdown('''
         ¡Pruébalo tu mismo! 🤝.
-        
+
         En el costado izquierdo, puedes ajustar el nivel de detalle que ofrece el asistente en su respuesta.
         Un menor nivel implica una respuesta más específica, mientras que un mayor nivel implica una respuesta con mayor contexto y extensión.
          ''',unsafe_allow_html=True)
